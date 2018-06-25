@@ -1,0 +1,119 @@
+﻿body {
+    background-color: black;
+    color: #FFFFFF;
+}
+
+.nav
+{
+    margin: 0px;
+    padding: 0px;
+	width: 100%;
+	background: #235f2b;
+	height: 48px;
+}
+
+#LabelWelcome {
+    margin: 0px;
+    padding: 0px;
+    width: 100%;
+    background: #003300;
+    height: 48px;
+    font-weight: 700;
+    color: #000000;
+}
+
+.nav ul {
+    list-style: none;
+    text-align: center;
+}
+.nav ul li {
+        float: left;
+    }
+.nav ul li a
+{
+	
+	color: white;
+    width: 126px;
+	display: block;
+	text-decoration: none;
+	font-size: 20px;
+	border-radius: 20px;
+	padding: 10px;
+	font-family: Century Gothic;
+	font-weight: bolder;
+}
+.nav ul li a:hover
+{
+	background: #B8AF92;
+	display: block;
+}
+
+
+#header {
+    font-size:280%;
+    color:black;
+    height: 45px;
+    width:272px;
+    text-align: left;
+    font: bolder;
+}
+
+#search-box-wrapper {
+    text-decoration:none;
+    padding-top:0px;
+    margin-top: 0px;
+    text-align: center;
+}
+
+.login dl dd
+{
+    color:white;
+    font-size: x-large;
+    width: 293px;
+    height: 50px;
+    font-weight: 700;
+    text-align: left;
+}
+
+.categories td {
+    background-color: black;
+}
+.categorieshead {
+    font-weight: 700;
+    width: 252px;
+    background-color: #FFFFFF;
+    font-style: italic;
+    color: #006600;
+    font-size: xx-large;
+}
+.releasehead{
+    font-weight: 700;
+    width: 252px;
+    background-color: #FFFFFF;
+    font-style: italic;
+    color: #006600;
+    font-size: xx-large;
+}
+.release td{
+    background-color: black;
+}
+.contact {
+    color: #FFFFFF;
+    height: 237px;
+    width: 515px;
+    text-align: right;
+    font-size:20%;
+    margin-left: 574px;
+}
+.helpcontacthead {
+    color: #FFFFFF;
+    font-size: 300%;
+    text-align: center;
+}
+.helpwhylist {
+    margin-top:50px;
+    color:white;
+}
+.helpwhylist dl {
+        font-size: 150%;
+ }

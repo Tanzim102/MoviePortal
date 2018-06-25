@@ -1,0 +1,403 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeFile="MasterPage.master.cs" Inherits="MasterPage" %>
+
+<!DOCTYPE html>
+<link rel="stylesheet" type="text/css" href="StyleSheet2.css">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head id="Head1" runat="server">
+    <title>Movie Portal</title>
+    
+    <asp:ContentPlaceHolder id="head" runat="server">
+    </asp:ContentPlaceHolder>
+
+    <style type="text/css">
+        
+        .auto-style1 {
+            width: 100%;
+            height: 93px;
+        }
+        .auto-style2 {
+            width: 460px;
+            font-size: 30px;
+            text-align: right;
+        }
+        .auto-style4 {
+            width: 804px;
+        }
+        
+     
+
+        .auto-style6 {
+            width: 500px;
+        }
+        .auto-style7 {
+            width: 531px;
+        }
+        .auto-style8 {
+            width: 1048px;
+        }
+        .auto-style9 {
+            width: 191px;
+        }
+        .auto-style10 {
+            width: 127px;
+            font-size: x-large;
+            text-align: center;
+        }
+            
+        .title{
+            font-size:19px;
+        }
+        .auto-style14 {
+            font-size: 19px;
+            text-align: left;
+            height: 37px;
+            text-decoration: underline;
+        }
+        .auto-style35:hover{
+            background-color:green;
+        }
+        .auto-style16 {
+            text-decoration: none;
+             
+        }
+        .auto-style17 {
+            color: #FFFFFF;
+            
+        }
+        
+           
+ul{
+    margin: 0px;
+    padding:0px;
+    list-style:none;
+}
+ ul li{
+    float:none;
+    width:110px;
+    height:40px;
+   
+    opacity:.8;
+    line-height:40px;
+    text-align:center;
+    font-size:20px;
+}
+ ul li a {
+    text-decoration:none;
+    color:white;
+   
+}
+ul li a:hover{
+    background-color:black;
+}
+ul li ul
+{
+     background-color: gray;
+     opacity: .8;
+}
+ul li ul li{
+    display:none;
+}
+ul li:hover ul li{
+    display:grid;
+}
+
+        .auto-style18 {
+            width: 944px;
+            height: 285px;
+            margin-bottom: 0px;
+        }
+        .auto-style19 {
+            width: 141%;
+            height: 258px;
+        }
+        .auto-style20 {
+            font-size: x-large;
+        }
+        .auto-style27 {
+            font-size: 19px;
+            text-align: left;
+            width: 216px;
+            height: 37px;
+            text-decoration: underline;
+        }
+        .auto-style31 {
+            width: 216px;
+            height: 73px;
+        }
+        .auto-style32 {
+            font-size: 19px;
+            text-align: left;
+            width: 149px;
+            height: 37px;
+            text-decoration: underline;
+        }
+        .auto-style45 {
+            width: 639px;
+            height: 37px;
+        }
+        .auto-style47 {
+            height: 37px;
+        }
+        .auto-style49 {
+            color: #FFFFFF;
+            font-size: large;
+        }
+        .auto-style51 {
+            font-size: large;
+        }
+        .auto-style54 {
+            width: 639px;
+            height: 35px;
+            font-size: large;
+        }
+        .auto-style55 {
+            width: 639px;
+            font-size: large;
+            height: 34px;
+        }
+        .auto-style60 {
+            width: 639px;
+            height: 33px;
+        }
+        .auto-style61 {
+            height: 33px;
+            width: 149px;
+            font-size: large;
+            text-decoration:none;
+        }
+        .auto-style62 {
+            height: 33px;
+            font-size: large;
+        }
+        .auto-style63 {
+            height: 33px;
+            width: 216px;
+            font-size: large;
+            color: #FEFFFF;
+        }
+        .auto-style73 {
+            width: 149px;
+            font-size: large;
+            height: 34px;
+        }
+        .auto-style76 {
+            height: 34px;
+        }
+        .auto-style77 {
+            height: 35px;
+            width: 149px;
+            font-size: large;
+        }
+        .auto-style92 {
+            width: 639px;
+            height: 73px;
+        }
+        .auto-style93 {
+            width: 149px;
+            font-size: large;
+            height: 73px;
+        }
+        .auto-style108 {
+            height: 35px;
+            font-size: large;
+        }
+        .auto-style109 {
+            height: 35px;
+            width: 216px;
+            font-size: large;
+            color: #FEFFFF;
+        }
+        .auto-style110 {
+            height: 34px;
+            font-size: large;
+        }
+        .auto-style111 {
+            height: 34px;
+            width: 216px;
+            font-size: large;
+            color: #FEFFFF;
+        }
+        .auto-style113 {
+            width: 149px;
+            font-size: large;
+            height: 36px;
+        }
+        .auto-style114 {
+            height: 36px;
+            font-size: large;
+        }
+        .auto-style115 {
+            height: 36px;
+            width: 216px;
+            font-size: large;
+            color: #FEFFFF;
+        }
+        .auto-style116 {
+            width: 639px;
+            height: 36px;
+        }
+        .auto-style117 {
+            height: 73px;
+        }
+        .auto-style130 {
+            height: 38px;
+            width: 149px;
+            font-size: large;
+        }
+        .auto-style131 {
+            height: 38px;
+            font-size: large;
+        }
+        .auto-style132 {
+            height: 38px;
+            width: 216px;
+            font-size: large;
+            color: #FEFFFF;
+        }
+        .auto-style133 {
+            width: 639px;
+            height: 38px;
+        }
+        .auto-style134 {
+            height: 38px;
+        }
+
+        .auto-style135 {
+            color: #FFFFFF;
+            text-decoration: none;
+        }
+
+        .auto-style136 {
+            color: #FEFFFF;
+        }
+
+        .auto-style137 {
+            color: #FFFFFF;
+            font-size: x-large;
+        }
+
+    </style>
+</head>
+<body>
+    <table class="auto-style1">
+        <tr>
+            <td class="auto-style2">Movie Portal</td>
+            <td class="auto-style10"><a href="http://localhost:24325/" class="auto-style16"><span class="auto-style17">Home</span></a></td>
+            <td  class="auto-style9" >&nbsp;</td>
+            <td class="auto-style8">&nbsp;</td>
+            <td class="auto-style7">&nbsp;</td>
+            <td class="auto-style6">&nbsp;</td>
+            <td class="auto-style4">&nbsp;</td>
+            <td class="auto-style20">
+                <ul>
+                    <li><span class="auto-style20">Login
+                        </span>
+                        <ul>
+                            <li class="auto-style20"><a href="loginadmin.aspx">Admin</a></li>
+                            <li class="auto-style20"><a href="loginuser.aspx">User</a></li>
+                            <li class="auto-style20"><a href="reguser.aspx">Register</a></li>
+                             
+                            
+                        </ul>
+                    </li>
+                </ul>
+
+
+            </td>
+            <td>    <font color="white"><a href="search.aspx" class="auto-style16"><span class="auto-style137">Search</span></a> </td>
+                
+            
+       
+               
+   
+        </tr>
+    </table>
+
+   
+      <form id="form1" runat="server">
+    <asp:ScriptManager ID="ScriptManager1" runat="server"></asp:ScriptManager>
+    <asp:UpdatePanel ID="UpdatePanel1" runat="server">
+        <ContentTemplate>
+            <asp:Timer ID="Timer1" runat="server" Interval="4000" OnTick="Timer1_Tick"></asp:Timer>
+            <asp:Image ID="Image1" Height="500px" Width="1340px" runat="server" />
+            </ContentTemplate>
+    </asp:UpdatePanel>
+
+
+
+<div>
+
+
+
+
+</div>
+  
+        <div class="auto-style18">
+
+            <table class="auto-style19">
+                <tr>
+                    <td class="auto-style45"></td>
+                    <td class="auto-style32"><strong>Movies</strong></td>
+                    <td class="auto-style47"></td>
+                    <td class="auto-style27"><strong>Free Movies</strong></td>
+                    <td class="auto-style14"><strong>Help</strong></td>
+                </tr>
+                <tr>
+                    <td class="auto-style60"></td>
+                    <td class="auto-style61"><a href="movies.aspx" class="auto-style16"><span class="auto-style17">Action</span></a></td>
+                    <td class="auto-style62"><a href="movies.aspx" class="auto-style16"><span class="auto-style17">History</span></a></td>
+                    <td class="auto-style63"><a href="seefree.aspx" class="auto-style16"><span class="auto-style136">13 Reason Why</span></a></td>
+                    <td class="auto-style62"><a href="nonreq.aspx" class="auto-style16"><span class="auto-style17">Request</span></a></td>
+                </tr>
+                <tr>
+                    <td class="auto-style55"><strong><span class="auto-style51">Movie Portal</span></strong><span class="auto-style51">, here you can watch movies online in higher quality for free without </span> </td>
+                    <td class="auto-style73"><a href="movies.aspx" class="auto-style16"><span class="auto-style17">A</span></a>nimation</td>
+                    <td class="auto-style110"><a href="movies.aspx" class="auto-style16"><span class="auto-style17">Horror</span></a></td>
+                    <td class="auto-style111"><a href="seefree.aspx" class="auto-style16"><span class="auto-style136">Truth or Dare</span></a></td>
+                    <td class="auto-style76"><a href="faq.aspx" class="auto-style16"><span class="auto-style49">FAQ</span></a></td>
+                </tr>
+                <tr>
+                    <td class="auto-style54"><span class="auto-style51">annoying of </span>advertising, so just come and enjoy watching...</td>
+                    <td class="auto-style77"><a href="movies.aspx" class="auto-style16"><span class="auto-style17">Comedy</span></td>
+                    <td class="auto-style108"><a href="movies.aspx" class="auto-style16"><span class="auto-style17">Thriller</span></a></td>
+                    <td class="auto-style109"><a href="seefree.aspx" class="auto-style16"><span class="auto-style136">Black Panther</span></a></td>
+                    <td class="auto-style108"><a href="contact.aspx" class="auto-style16"><span class="auto-style17">Contact Us</span></a></td>
+                </tr>
+                <tr>
+                    <td class="auto-style116"></td>
+                    <td class="auto-style113"><a href="movies.aspx" class="auto-style16"><span class="auto-style17">Crime</span></td>
+                    <td class="auto-style114"><a href="movies.aspx" class="auto-style16"><span class="auto-style17">Romantic</span></a></td>
+                    <td class="auto-style115"><a href="seefree.aspx" class="auto-style16"><span class="auto-style136">Deadpool2</span></a></td>
+                    <td class="auto-style114"><a href="feedback.aspx" class="auto-style16"><span class="auto-style49">Feedback</span></a></td>
+                </tr>
+                <tr>
+                    <td class="auto-style133"></td>
+                    <td class="auto-style130"><a href="movies.aspx" class="auto-style16"><span class="auto-style17">Drama</span></td>
+                    <td class="auto-style131"><a href="movies.aspx" class="auto-style16"><span class="auto-style17">TV shows</span></a></td>
+                    <td class="auto-style132"><a href="seefree.aspx" class="auto-style16"><span class="auto-style136">12 Strong</span></a></td>
+                    <td class="auto-style134">&nbsp;</td>
+                </tr>
+                <tr>
+                    <td class="auto-style92"></td>
+                    <td class="auto-style93"><span class="auto-style17"><a href="movies.aspx" class="auto-style135">Family</a></span><br />
+                        <br />
+                    </td>
+                    <td class="auto-style117"></td>
+                    <td class="auto-style31"></td>
+                    <td class="auto-style117"></td>
+                </tr>
+            </table>
+
+        </div>
+
+          
+     <div>
+   
+        <asp:ContentPlaceHolder id="ContentPlaceHolder1" runat="server">
+        
+        </asp:ContentPlaceHolder>
+    </div>
+    </form>
+    
+</body>
+</html>
